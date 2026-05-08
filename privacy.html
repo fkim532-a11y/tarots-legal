@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Tarots Mystiques</title>
+  <style>
+    :root {
+      --bg: #08080f;
+      --surface: #11111e;
+      --border: #d4af3740;
+      --gold: #d4af37;
+      --gold-light: #f0d060;
+      --text: #f0e6d3;
+      --muted: #8a7a6a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.75;
+      padding: 24px 16px 60px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      text-align: center;
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+    .star { font-size: 32px; color: var(--gold); display: block; margin-bottom: 16px; }
+    h1 {
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .subtitle {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 15px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 36px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 12px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+    }
+    ul {
+      margin: 0 0 12px 20px;
+      font-size: 14px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+    }
+    li { margin-bottom: 4px; }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #1a1a2e;
+      border-left: 3px solid var(--gold);
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      font-family: system-ui, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-family: system-ui, sans-serif;
+      margin: 16px 0;
+    }
+    th {
+      background: #1a1a2e;
+      color: var(--gold);
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid #1a1a2e;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+    footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="star">✦</span>
+      <h1>Politique de confidentialité</h1>
+      <p class="subtitle">Tarots Mystiques — Version du 8 mai 2026</p>
+    </header>
+
+    <div class="highlight">
+      <strong>En résumé :</strong> Tarots Mystiques ne collecte et ne stocke aucune donnée personnelle sur ses propres serveurs. Vos données de tirage restent sur votre appareil. Certains services tiers (Google AdMob, Google Play, Gemini) ont leurs propres politiques de données.
+    </div>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>L'application Tarots Mystiques (<code>com.france.tarots</code>) est éditée par un développeur indépendant.</p>
+    <p>Contact : <a href="mailto:franckim@orange.fr">franckim@orange.fr</a></p>
+
+    <h2>2. Données collectées par l'application</h2>
+    <p>L'application <strong>ne collecte aucune donnée personnelle</strong> directement. Aucun compte, aucune inscription, aucune transmission vers nos serveurs.</p>
+
+    <table>
+      <tr>
+        <th>Donnée</th>
+        <th>Stockage</th>
+        <th>Usage</th>
+      </tr>
+      <tr>
+        <td>Tirages sauvegardés</td>
+        <td>Local (base de données Room, appareil uniquement)</td>
+        <td>Journal personnel, historique</td>
+      </tr>
+      <tr>
+        <td>Favoris</td>
+        <td>Local (base de données Room)</td>
+        <td>Bibliothèque des cartes</td>
+      </tr>
+      <tr>
+        <td>Préférences (rappel, heure, deck)</td>
+        <td>Local (SharedPreferences)</td>
+        <td>Paramètres utilisateur</td>
+      </tr>
+      <tr>
+        <td>Statut premium</td>
+        <td>Local chiffré (EncryptedSharedPreferences AES-256)</td>
+        <td>Vérification de l'abonnement</td>
+      </tr>
+      <tr>
+        <td>Carte du jour</td>
+        <td>Local (SharedPreferences)</td>
+        <td>Widget et section accueil</td>
+      </tr>
+    </table>
+
+    <p>Toutes ces données sont stockées <strong>exclusivement sur votre appareil</strong> et peuvent être supprimées à tout moment en désinstallant l'application.</p>
+
+    <h2>3. Services tiers</h2>
+
+    <p>L'application intègre des services tiers qui peuvent collecter des données selon leurs propres politiques :</p>
+
+    <h2 style="font-size:13px; margin-top:20px;">3.1 Google AdMob</h2>
+    <p>La version gratuite affiche des publicités via Google AdMob. AdMob peut collecter l'identifiant publicitaire de votre appareil (GAID), votre adresse IP approximative et des données de comportement publicitaire afin de personnaliser les annonces affichées.</p>
+    <p>Vous pouvez limiter la personnalisation publicitaire dans les paramètres de votre appareil : <em>Paramètres → Google → Annonces → Désactiver la personnalisation des annonces</em>.</p>
+    <p>Politique de confidentialité Google : <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+
+    <h2 style="font-size:13px; margin-top:20px;">3.2 Google Play Billing</h2>
+    <p>Les paiements sont gérés exclusivement par Google Play. Tarots Mystiques n'a pas accès à vos informations de paiement (numéro de carte, etc.). Google Play confirme simplement le statut de l'abonnement.</p>
+    <p>Politique de confidentialité Google Play : <a href="https://play.google.com/about/privacy-security-deception/" target="_blank">play.google.com/about/privacy-security-deception</a></p>
+
+    <h2 style="font-size:13px; margin-top:20px;">3.3 Google Gemini (IA)</h2>
+    <p>Les interprétations sont générées par l'API Google Gemini. Pour chaque demande d'interprétation, les données suivantes sont transmises à Google :</p>
+    <ul>
+      <li>Les cartes tirées (identifiants numériques)</li>
+      <li>Le type de tirage (une carte, trois cartes, croix celtique…)</li>
+      <li>Le domaine choisi (amour, travail, général…)</li>
+    </ul>
+    <p>Aucune donnée permettant de vous identifier personnellement (nom, email, localisation) n'est incluse dans ces requêtes.</p>
+    <p>Conditions d'utilisation de l'API Gemini : <a href="https://ai.google.dev/terms" target="_blank">ai.google.dev/terms</a></p>
+
+    <h2 style="font-size:13px; margin-top:20px;">3.4 Google Play In-App Review</h2>
+    <p>Après plusieurs sessions, l'application peut demander un avis via la fonctionnalité native Google Play. Cette demande est gérée entièrement par Google et aucune donnée supplémentaire ne nous est transmise.</p>
+
+    <h2>4. Notifications</h2>
+    <p>Si vous activez les rappels quotidiens, l'application planifie une notification locale via Android WorkManager. Aucune donnée n'est transmise à l'extérieur dans ce cadre. Vous pouvez désactiver les notifications à tout moment dans les paramètres de l'application ou de votre appareil.</p>
+
+    <h2>5. Widget d'écran d'accueil</h2>
+    <p>Le widget affiche la carte du jour en lisant les préférences stockées localement. Aucune donnée réseau n'est utilisée pour le widget.</p>
+
+    <h2>6. Enfants</h2>
+    <p>L'application est destinée aux personnes de <strong>13 ans et plus</strong>. Nous ne collectons pas sciemment de données provenant d'enfants de moins de 13 ans.</p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données stockées localement :</p>
+    <ul>
+      <li><strong>Accès :</strong> toutes les données sont visibles dans l'application (journal, bibliothèque, paramètres)</li>
+      <li><strong>Rectification :</strong> modifiable directement dans l'application</li>
+      <li><strong>Suppression :</strong> désinstaller l'application efface toutes les données locales</li>
+      <li><strong>Portabilité :</strong> la fonctionnalité de partage vous permet d'exporter vos tirages</li>
+    </ul>
+    <p>Pour les données traitées par les services tiers (Google), exercez vos droits directement auprès de Google via <a href="https://myaccount.google.com" target="_blank">myaccount.google.com</a>.</p>
+
+    <h2>8. Sécurité</h2>
+    <p>Le statut premium est chiffré avec AES-256-GCM via Android EncryptedSharedPreferences. Les données locales sont protégées par le bac à sable Android (isolation des applications). Nous ne transmettons aucune donnée sensible en réseau.</p>
+
+    <h2>9. Modifications</h2>
+    <p>Cette politique peut être mise à jour. La date en haut de page indique la dernière révision. L'utilisation continue de l'application après modification vaut acceptation.</p>
+
+    <h2>10. Contact</h2>
+    <p>Pour toute question sur la confidentialité de vos données : <a href="mailto:franckim@orange.fr">franckim@orange.fr</a></p>
+
+    <footer>
+      <p>Tarots Mystiques — <a href="cgu.html">CGU</a> · <a href="privacy.html">Politique de confidentialité</a></p>
+      <p style="margin-top:8px;">© 2026 Tarots Mystiques. Tous droits réservés.</p>
+    </footer>
+  </div>
+</body>
+</html>
