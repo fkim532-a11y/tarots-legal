@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité — Tarots Mystiques</title>
+  <title>Politique de confidentialité — Tarots : Tirage &amp; Voyance</title>
   <style>
     :root {
       --bg: #08080f;
@@ -117,19 +117,23 @@
     <header>
       <span class="star">✦</span>
       <h1>Politique de confidentialité</h1>
-      <p class="subtitle">Tarots Mystiques — Version du 8 mai 2026</p>
+      <p class="subtitle">Tarots : Tirage &amp; Voyance — Version du 29 août 2026</p>
     </header>
 
     <div class="highlight">
-      <strong>En résumé :</strong> Tarots Mystiques ne collecte et ne stocke aucune donnée personnelle sur ses propres serveurs. Vos données de tirage restent sur votre appareil. Certains services tiers (Google AdMob, Google Play, Gemini) ont leurs propres politiques de données.
+      <strong>En résumé :</strong> l'application ne demande pas la permission d'accéder à Internet. Elle est techniquement incapable d'envoyer quoi que ce soit hors de votre téléphone. Vos tirages, vos questions et vos notes restent chez vous, et nulle part ailleurs.
     </div>
 
     <h2>1. Responsable du traitement</h2>
-    <p>L'application Tarots Mystiques (<code>com.france.tarots</code>) est éditée par un développeur indépendant.</p>
+    <p>L'application Tarots : Tirage &amp; Voyance (<code>com.france.tarots</code>) est éditée par un développeur indépendant.</p>
     <p>Contact : <a href="mailto:franckim@orange.fr">franckim@orange.fr</a></p>
 
-    <h2>2. Données collectées par l'application</h2>
-    <p>L'application <strong>ne collecte aucune donnée personnelle</strong> directement. Aucun compte, aucune inscription, aucune transmission vers nos serveurs.</p>
+    <h2>2. Aucune donnée n'est collectée</h2>
+    <p>L'application <strong>ne collecte, ne transmet et ne stocke aucune donnée personnelle</strong> en dehors de votre appareil. Il n'y a ni compte, ni inscription, ni serveur.</p>
+    <p>Ce n'est pas seulement un engagement : depuis la version 2.4, l'application <strong>ne déclare pas la permission <code>INTERNET</code></strong> dans son manifeste Android. Le système d'exploitation lui interdit donc toute connexion réseau. Vous pouvez le vérifier vous-même dans les informations de l'application, sur votre téléphone.</p>
+
+    <h2>3. Ce qui est enregistré sur votre appareil</h2>
+    <p>L'application enregistre des informations localement pour fonctionner. Elles ne quittent jamais le téléphone.</p>
 
     <table>
       <tr>
@@ -138,91 +142,85 @@
         <th>Usage</th>
       </tr>
       <tr>
-        <td>Tirages sauvegardés</td>
-        <td>Local (base de données Room, appareil uniquement)</td>
+        <td>Tirages sauvegardés (cartes, date, thème)</td>
+        <td>Local — base de données Room</td>
         <td>Journal personnel, historique</td>
       </tr>
       <tr>
-        <td>Favoris</td>
-        <td>Local (base de données Room)</td>
+        <td>Question posée avant un tirage</td>
+        <td>Local — base de données Room</td>
+        <td>Texte libre que vous écrivez, affiché avec le tirage pour le relire plus tard</td>
+      </tr>
+      <tr>
+        <td>Notes personnelles sur un tirage</td>
+        <td>Local — base de données Room</td>
+        <td>Texte libre que vous écrivez, visible dans le journal</td>
+      </tr>
+      <tr>
+        <td>Cartes favorites</td>
+        <td>Local — base de données Room</td>
         <td>Bibliothèque des cartes</td>
       </tr>
       <tr>
-        <td>Préférences (rappel, heure, deck)</td>
-        <td>Local (SharedPreferences)</td>
-        <td>Paramètres utilisateur</td>
-      </tr>
-      <tr>
-        <td>Statut premium</td>
-        <td>Local chiffré (EncryptedSharedPreferences AES-256)</td>
-        <td>Vérification de l'abonnement</td>
+        <td>Préférences (rappel quotidien, heure)</td>
+        <td>Local — SharedPreferences</td>
+        <td>Réglages de l'application</td>
       </tr>
       <tr>
         <td>Carte du jour</td>
-        <td>Local (SharedPreferences)</td>
-        <td>Widget et section accueil</td>
+        <td>Local — SharedPreferences</td>
+        <td>Section « carte du jour » de l'accueil</td>
       </tr>
     </table>
 
-    <p>Toutes ces données sont stockées <strong>exclusivement sur votre appareil</strong> et peuvent être supprimées à tout moment en désinstallant l'application.</p>
+    <p>La question et les notes personnelles sont les seules zones où vous pouvez saisir du texte libre. <strong>Écrivez-y ce que vous voulez : rien n'en sort.</strong> Ces contenus ne sont ni lus, ni analysés, ni sauvegardés ailleurs que dans la mémoire de votre téléphone.</p>
 
-    <h2>3. Services tiers</h2>
+    <p>Toutes ces données sont supprimées définitivement lorsque vous désinstallez l'application, ou lorsque vous effacez ses données depuis les réglages Android.</p>
 
-    <p>L'application intègre des services tiers qui peuvent collecter des données selon leurs propres politiques :</p>
-
-    <h2 style="font-size:13px; margin-top:20px;">3.1 Google AdMob</h2>
-    <p>La version gratuite affiche des publicités via Google AdMob. AdMob peut collecter l'identifiant publicitaire de votre appareil (GAID), votre adresse IP approximative et des données de comportement publicitaire afin de personnaliser les annonces affichées.</p>
-    <p>Vous pouvez limiter la personnalisation publicitaire dans les paramètres de votre appareil : <em>Paramètres → Google → Annonces → Désactiver la personnalisation des annonces</em>.</p>
-    <p>Politique de confidentialité Google : <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
-
-    <h2 style="font-size:13px; margin-top:20px;">3.2 Google Play Billing</h2>
-    <p>Les paiements sont gérés exclusivement par Google Play. Tarots Mystiques n'a pas accès à vos informations de paiement (numéro de carte, etc.). Google Play confirme simplement le statut de l'abonnement.</p>
-    <p>Politique de confidentialité Google Play : <a href="https://play.google.com/about/privacy-security-deception/" target="_blank">play.google.com/about/privacy-security-deception</a></p>
-
-    <h2 style="font-size:13px; margin-top:20px;">3.3 Google Gemini (IA)</h2>
-    <p>Les interprétations sont générées par l'API Google Gemini. Pour chaque demande d'interprétation, les données suivantes sont transmises à Google :</p>
+    <h2>4. Ce que l'application ne fait pas</h2>
+    <p>Pour lever toute ambiguïté avec d'anciennes versions :</p>
     <ul>
-      <li>Les cartes tirées (identifiants numériques)</li>
-      <li>Le type de tirage (une carte, trois cartes, croix celtique…)</li>
-      <li>Le domaine choisi (amour, travail, général…)</li>
+      <li><strong>Aucune publicité.</strong> Google AdMob a été retiré en août 2026. Aucun identifiant publicitaire n'est lu ni transmis.</li>
+      <li><strong>Aucun abonnement, aucun achat.</strong> Google Play Billing a été retiré en août 2026. L'application est entièrement gratuite.</li>
+      <li><strong>Aucune intelligence artificielle.</strong> Les interprétations étaient auparavant générées par l'API Google Gemini, ce qui impliquait de transmettre les cartes tirées à Google. <strong>Ce n'est plus le cas depuis août 2026 :</strong> tous les textes sont écrits à l'avance et lus depuis l'application.</li>
+      <li><strong>Aucun suivi, aucune statistique d'usage,</strong> aucun outil de mesure d'audience.</li>
     </ul>
-    <p>Aucune donnée permettant de vous identifier personnellement (nom, email, localisation) n'est incluse dans ces requêtes.</p>
-    <p>Conditions d'utilisation de l'API Gemini : <a href="https://ai.google.dev/terms" target="_blank">ai.google.dev/terms</a></p>
 
-    <h2 style="font-size:13px; margin-top:20px;">3.4 Google Play In-App Review</h2>
-    <p>Après plusieurs sessions, l'application peut demander un avis via la fonctionnalité native Google Play. Cette demande est gérée entièrement par Google et aucune donnée supplémentaire ne nous est transmise.</p>
+    <h2>5. Notifications</h2>
+    <p>Si vous activez le rappel quotidien, l'application programme une notification <strong>locale</strong> via le planificateur d'alarmes d'Android. Rien n'est transmis à l'extérieur. Vous pouvez désactiver ce rappel à tout moment, dans l'application ou dans les réglages de votre téléphone.</p>
 
-    <h2>4. Notifications</h2>
-    <p>Si vous activez les rappels quotidiens, l'application planifie une notification locale via Android WorkManager. Aucune donnée n'est transmise à l'extérieur dans ce cadre. Vous pouvez désactiver les notifications à tout moment dans les paramètres de l'application ou de votre appareil.</p>
+    <h2>6. Liens vers des sites extérieurs</h2>
+    <p>L'écran Paramètres contient une section « Soutenir » proposant deux liens facultatifs — Ko-fi et PayPal. Y toucher <strong>ouvre votre navigateur</strong> et vous quittez alors l'application. Ces sites appliquent leurs propres politiques de confidentialité, sur lesquelles nous n'avons aucune prise.</p>
+    <p>Ces dons sont libres et <strong>ne donnent accès à aucun contenu ni fonctionnalité supplémentaire</strong>. L'application ne sait pas si vous avez donné.</p>
 
-    <h2>5. Widget d'écran d'accueil</h2>
-    <p>Le widget affiche la carte du jour en lisant les préférences stockées localement. Aucune donnée réseau n'est utilisée pour le widget.</p>
+    <h2>7. Demande d'avis Google Play</h2>
+    <p>Après plusieurs utilisations, l'application peut afficher la demande d'avis native de Google Play. Cette fenêtre est entièrement gérée par Google Play, qui est un composant du système. Aucune donnée ne nous est transmise à cette occasion.</p>
 
-    <h2>6. Enfants</h2>
-    <p>L'application est destinée aux personnes de <strong>13 ans et plus</strong>. Nous ne collectons pas sciemment de données provenant d'enfants de moins de 13 ans.</p>
+    <h2>8. Sauvegarde Android</h2>
+    <p>Les réglages de l'application sont <strong>exclus</strong> de la sauvegarde cloud d'Android et du transfert vers un nouvel appareil. Votre journal de tirages, lui, suit les règles de sauvegarde d'Android et de votre compte Google, comme les données de toute application.</p>
 
-    <h2>7. Vos droits (RGPD)</h2>
-    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données stockées localement :</p>
+    <h2>9. Enfants</h2>
+    <p>L'application est destinée aux personnes de <strong>13 ans et plus</strong>. Aucune donnée n'étant collectée, aucune donnée d'enfant ne l'est non plus.</p>
+
+    <h2>10. Vos droits (RGPD)</h2>
+    <p>Le Règlement Général sur la Protection des Données encadre le traitement des données personnelles. <strong>Aucun traitement n'est effectué par l'éditeur</strong>, puisque aucune donnée ne lui parvient. Concernant les données présentes sur votre appareil :</p>
     <ul>
-      <li><strong>Accès :</strong> toutes les données sont visibles dans l'application (journal, bibliothèque, paramètres)</li>
-      <li><strong>Rectification :</strong> modifiable directement dans l'application</li>
-      <li><strong>Suppression :</strong> désinstaller l'application efface toutes les données locales</li>
-      <li><strong>Portabilité :</strong> la fonctionnalité de partage vous permet d'exporter vos tirages</li>
+      <li><strong>Accès :</strong> tout est visible dans l'application — journal, bibliothèque, paramètres</li>
+      <li><strong>Rectification :</strong> les notes et les questions sont modifiables dans l'application</li>
+      <li><strong>Suppression :</strong> supprimez un tirage par un balayage dans le journal ; effacez tout en désinstallant l'application ou en effaçant ses données depuis les réglages Android</li>
+      <li><strong>Portabilité :</strong> la fonction de partage exporte un tirage en image ou en PDF</li>
     </ul>
-    <p>Pour les données traitées par les services tiers (Google), exercez vos droits directement auprès de Google via <a href="https://myaccount.google.com" target="_blank">myaccount.google.com</a>.</p>
+    <p>Aucune demande n'a besoin de nous être adressée pour exercer ces droits : tout se fait depuis votre téléphone, sans intermédiaire.</p>
 
-    <h2>8. Sécurité</h2>
-    <p>Le statut premium est chiffré avec AES-256-GCM via Android EncryptedSharedPreferences. Les données locales sont protégées par le bac à sable Android (isolation des applications). Nous ne transmettons aucune donnée sensible en réseau.</p>
+    <h2>11. Modifications</h2>
+    <p>Cette politique peut être mise à jour. La date en haut de page indique la dernière révision.</p>
 
-    <h2>9. Modifications</h2>
-    <p>Cette politique peut être mise à jour. La date en haut de page indique la dernière révision. L'utilisation continue de l'application après modification vaut acceptation.</p>
-
-    <h2>10. Contact</h2>
-    <p>Pour toute question sur la confidentialité de vos données : <a href="mailto:franckim@orange.fr">franckim@orange.fr</a></p>
+    <h2>12. Contact</h2>
+    <p>Pour toute question sur la confidentialité : <a href="mailto:franckim@orange.fr">franckim@orange.fr</a></p>
 
     <footer>
-      <p>Tarots Mystiques — <a href="cgu.html">CGU</a> · <a href="privacy.html">Politique de confidentialité</a></p>
-      <p style="margin-top:8px;">© 2026 Tarots Mystiques. Tous droits réservés.</p>
+      <p>Tarots : Tirage &amp; Voyance — <a href="cgu.html">CGU</a> · <a href="privacy.html">Politique de confidentialité</a></p>
+      <p style="margin-top:8px;">© 2026 Tarots : Tirage &amp; Voyance. Tous droits réservés.</p>
     </footer>
   </div>
 </body>
